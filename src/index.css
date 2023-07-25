@@ -12,12 +12,13 @@ code {
     monospace;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-.main_div{
+
+.main_div {
   width: 100%;
   height: 100vh;
   background: #6983aa;
@@ -28,14 +29,15 @@ code {
   text-align: center;
 }
 
-.center_div{
+.center_div {
   background-color: rgb(229, 226, 231);
   border-radius: 15px;
   width: 25%;
   height: 80vh;
   box-shadow: 5px 5px 25px;
 }
-h1{
+
+h1 {
   color: rgb(255, 255, 255);
   background: transparent;
   padding: 6px 0 2px 0;
@@ -43,9 +45,17 @@ h1{
   margin-bottom: 10px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
-input{
+
+
+.add_item_box {
+  display: flex;
+  justify-content: center;
+}
+
+.add_item_box input {
+  height: 40px;
+  margin-right: 8px;
   text-align: center;
-  height: 30px;
   top: 10px;
   border: none;
   background: transparent;
@@ -55,59 +65,113 @@ input{
   border-bottom: 2px solid #8566aa;
   outline: none;
 }
-button{
-  min-height: 40px;
-  width: 40px;
+
+.add_item_btn {
+  /* min-height: 40px; */
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
   border-radius: 50%;
-  border-color: transparent;
+  /* border-color: transparent; */
   background-color: #8566aa;
   color: white;
-  font-size: 40px;
+  font-size: 1.5rem;
   border: none;
   outline: none;
-  margin-left: 10px;
+  margin-left: 0.3rem;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
-button:hover{
+
+.add_item_btn:hover {
   background-color: rgb(103, 245, 103);
 }
 
-ol{
+ol {
   margin-top: 30px;
 }
-ol li{
+
+ol li {
   padding-left: 0px;
   text-align: left;
-  font-size: 20px;
-  font-weight: 500;
-  min-height: 40px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  min-height: 2.5rem;
   display: flex;
   align-items: center;
   color: #8466aa;
   text-transform: capitalize;
 }
 
-.todo_style{
+.todo_style {
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
 }
-.todo_style .fa-solid{
-  width: 20px;
-  height: 20px;
+
+.fa-solid {
+  width: 1.9rem;
+  height: 1.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #8466aa;
   border-radius: 50%;
-  margin: 0 15px 0 35px;
+  margin: 0px 0.8rem 0 2rem;
   color: aliceblue;
+  font-size: x-large;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
-.todo_style .fa-solid:hover{
+
+.todo_style .fa-solid:hover {
   background-color: crimson;
 }
-/* .todo_style .fa-solid:hover .list_style{
-  color: crimson;
-} */
+
+
+
+
+@media (max-width: 800px) {
+
+  .center_div {
+    width: 40%
+  }
+}
+
+@media (max-width: 450px) {
+  .center_div {
+    width: 70%;
+  }
+
+  .center_div h1 {
+    font-size: 1.7rem;
+  }
+
+  .add_item_box input {
+    height: 32px;
+  }
+
+  .center_div button {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  ol {
+    margin-top: 17px;
+  }
+
+  .fa-solid {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0px 0.8rem 0 1.5rem;
+    font-size: 16px;
+  }
+
+  ol li {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { RxCross2, AiOutlinePlus } from "react-icons/rx";
 
 const ToDoLists = (props) => {
 
@@ -10,12 +11,14 @@ const ToDoLists = (props) => {
                     onClick={() => {
                         props.onSelect(props.id);
                     }}
-                > x </div>
+                > <RxCross2 /> </div>
                 <li> {props.text} </li>
             </div>
             
         </>
     );
 }
+
+
 
 export default ToDoLists;
