@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# ToDo List Reactjs
+
+
+A Todo Web App made with React JS, and Material UI. It has a sidebar where users can see all the tasks and can create a new task.\
+Screenshop : 
+![Screenshot (466)](https://github.com/Deepak413/weatherfinder/assets/98450154/32c7b5f0-79d7-497d-8c42-0c4b18591447)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
